@@ -1,4 +1,5 @@
 using IdentityApp.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
@@ -19,11 +21,23 @@ builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 5;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireUppercase = true;
     options.Lockout.MaxFailedAccessAttempts = 3;
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
     options.Lockout.AllowedForNewUsers = true; //should lock out new users as well
     options.User.RequireUniqueEmail = true;
 
+});
+
+// added by me as well... grants access to pages if you are logged in
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AllowAnonymousPolicy", policy => policy.RequireAssertion(context => true));
+
+    options.FallbackPolicy = new AuthorizationPolicyBuilder()
+            .RequireAuthenticatedUser()
+            .Build();
 });
 
 var app = builder.Build();
