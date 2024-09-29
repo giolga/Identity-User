@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\GioLGA\\Desktop\\IdentityApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|c:\\users\\giolga\\desktop\\identityapp\\identityapp\\authorization\\invoiceoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|solutionrelative:identityapp\\authorization\\invoiceoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|c:\\users\\giolga\\desktop\\identityapp\\identityapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|solutionrelative:identityapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|c:\\users\\giolga\\desktop\\identityapp\\identityapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|solutionrelative:identityapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|c:\\users\\giolga\\desktop\\identityapp\\identityapp\\views\\invoices\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|solutionrelative:identityapp\\views\\invoices\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|c:\\users\\giolga\\desktop\\identityapp\\identityapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD31340C-85C3-482E-97B9-A5E2F44ADCB1}|IdentityApp\\IdentityApp.csproj|solutionrelative:identityapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,8 +37,25 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "InvoiceOperations.cs",
+              "DocumentMoniker": "C:\\Users\\GioLGA\\Desktop\\IdentityApp\\IdentityApp\\Authorization\\InvoiceOperations.cs",
+              "RelativeDocumentMoniker": "IdentityApp\\Authorization\\InvoiceOperations.cs",
+              "ToolTip": "C:\\Users\\GioLGA\\Desktop\\IdentityApp\\IdentityApp\\Authorization\\InvoiceOperations.cs",
+              "RelativeToolTip": "IdentityApp\\Authorization\\InvoiceOperations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T18:00:35.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\GioLGA\\Desktop\\IdentityApp\\IdentityApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "IdentityApp\\Views\\Shared\\_Layout.cshtml",
@@ -47,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\GioLGA\\Desktop\\IdentityApp\\IdentityApp\\Views\\Invoices\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "IdentityApp\\Views\\Invoices\\Index.cshtml.cs",
@@ -55,18 +76,17 @@
               "RelativeToolTip": "IdentityApp\\Views\\Invoices\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T09:32:34.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T09:32:34.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\GioLGA\\Desktop\\IdentityApp\\IdentityApp\\Program.cs",
               "RelativeDocumentMoniker": "IdentityApp\\Program.cs",
               "ToolTip": "C:\\Users\\GioLGA\\Desktop\\IdentityApp\\IdentityApp\\Program.cs",
               "RelativeToolTip": "IdentityApp\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T08:15:32.91Z",
               "EditorCaption": ""
