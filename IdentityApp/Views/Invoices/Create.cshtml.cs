@@ -34,7 +34,7 @@ namespace IdentityApp.Views.Invoices
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            Invoice.CreatorId = UserManager.GetUserId(User);
+            Invoice.CreatorId = UserManager.GetUserId(User)!;
 
             var isAuthorized = await AuthorizationService.AuthorizeAsync(User, Invoice, InvoiceOperations.Create);
 
