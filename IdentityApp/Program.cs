@@ -1,3 +1,4 @@
+using IdentityApp.Authorization;
 using IdentityApp.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -39,6 +40,9 @@ builder.Services.AddAuthorization(options =>
             .RequireAuthenticatedUser()
             .Build();
 });
+
+//added by me
+builder.Services.AddScoped<IAuthorizationHandler, InvoiceCreatorAutorizationHandler>();
 
 var app = builder.Build();
 
