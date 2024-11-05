@@ -43,6 +43,7 @@ builder.Services.AddAuthorization(options =>
 
 //added by me
 builder.Services.AddScoped<IAuthorizationHandler, InvoiceCreatorAutorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler, InvoiceManagerAuthorizationHandler>();
 
 var app = builder.Build();
 
