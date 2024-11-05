@@ -31,10 +31,11 @@ namespace IdentityApp.Views.Invoices
                            select i;
 
             var isManager = User.IsInRole(Constants.InvoiceManagersRole);
+            var isAdmin = User.IsInRole(Constants.InvoiceAdminRole);
 
             var currentUserId = UserManager.GetUserId(User);
 
-            if(!isManager)
+            if(!isManager && !isAdmin) //we aren't manager and admin
             {
                 invoices = invoices.Where(i => i.CreatorId == currentUserId);
             }

@@ -37,9 +37,11 @@ namespace IdentityApp.Views.Invoices
                 return NotFound();
             }
 
-            var isAuthorized = await AuthorizationService.AuthorizeAsync(User, Invoice, InvoiceOperations.Read);
+            var isCreator = await AuthorizationService.AuthorizeAsync(User, Invoice, InvoiceOperations.Read);
 
-            if (isAuthorized.Succeeded == false)
+            var isManager = User.IsInRole(Constants.InvoiceManagersRole);
+
+            if (isCreator.Succeeded == false && isManager == false)
             {
                 return Forbid();
             }
